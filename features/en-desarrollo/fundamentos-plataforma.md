@@ -27,5 +27,5 @@ Entregar una base ejecutable y segura sobre la cual desarrollar los dominios cl�
 
 - HU-001 — Inicializar base técnica del backend. Implementada y verificada.
 - HU-002 — Inicializar aplicación web y navegación superior. Implementada y verificada.
-- HU-003 — Administrar autenticación y sesiones.
+- HU-003 — Administrar autenticación y sesiones. Implementada y verificada.
 - HU-004 — Administrar roles y permisos.
