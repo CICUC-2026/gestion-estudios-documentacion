@@ -4,7 +4,7 @@
 **Actor:** admin  
 **Estado:** propuesta  
 **Última actualización:** 2026-07-17  
-**Feature relacionada:** [Fundamentos de la plataforma](../../features/backlog/fundamentos-plataforma.md)  
+**Feature relacionada:** [Fundamentos de la plataforma](../../features/en-desarrollo/fundamentos-plataforma.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/4  
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
 

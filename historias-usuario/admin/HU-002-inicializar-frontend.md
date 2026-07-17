@@ -2,9 +2,9 @@
 
 **Tipo:** historia-usuario  
 **Actor:** admin  
-**Estado:** propuesta  
+**Estado:** implementada  
 **Última actualización:** 2026-07-17  
-**Feature relacionada:** [Fundamentos de la plataforma](../../features/backlog/fundamentos-plataforma.md)  
+**Feature relacionada:** [Fundamentos de la plataforma](../../features/en-desarrollo/fundamentos-plataforma.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/2  
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
 
@@ -14,12 +14,12 @@ Como **usuario de la plataforma**, quiero una interfaz navegable con barra super
 
 ## Criterios de aceptación
 
-- [ ] React/TypeScript/Vite ejecuta en desarrollo y producción.
-- [ ] Existe layout responsivo con barra horizontal superior.
-- [ ] La interfaz utiliza una identidad propia de CICUC y no reutiliza estilos de otro producto.
-- [ ] Rutas y errores base son accesibles mediante teclado.
-- [ ] Tokens neutrales cumplen contraste AA.
-- [ ] CI ejecuta lint, tipos, tests y build.
+- [x] React/TypeScript/Vite ejecuta en desarrollo y producción.
+- [x] Existe layout responsivo con barra horizontal superior.
+- [x] La interfaz utiliza una identidad propia de CICUC y no reutiliza estilos de otro producto.
+- [x] Rutas y errores base son accesibles mediante teclado.
+- [x] Tokens neutrales usan contrastes AA en los elementos implementados.
+- [x] CI ejecuta lint, tipos, tests, build y Playwright.
 
 ## Impacto
 
@@ -47,8 +47,14 @@ Usar datos ficticios en prototipos y tests.
 - `gestion-estudios-frontend/src/rutas/` — rutas.
 - `gestion-estudios-frontend/tests/` — pruebas E2E.
 
+## Implementado en
+
+- Commit principal: https://github.com/CICUC-2026/gestion-estudios-frontend/commit/051fbdfddd7eb3efdf8295f64f20194ded89767f
+- CI: https://github.com/CICUC-2026/gestion-estudios-frontend/actions/runs/29587567802
+
 ## Verificación y regresión
 
-- [ ] Lint, tipos, tests y build.
-- [ ] Playwright en viewport escritorio y móvil.
-- [ ] Verificación de teclado y contraste.
+- [x] ESLint, TypeScript, 2 pruebas de componentes y build.
+- [x] Playwright: 4 pruebas en viewport escritorio y móvil.
+- [x] Verificación visual de barra, navegación, estados vacíos y contenido ficticio.
+- [x] Navegación principal y ruta 404 verificadas por roles accesibles.
