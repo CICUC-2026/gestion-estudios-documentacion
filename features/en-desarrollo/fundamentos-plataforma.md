@@ -29,3 +29,5 @@ Entregar una base ejecutable y segura sobre la cual desarrollar los dominios cl�
 - HU-002 — Inicializar aplicación web y navegación superior. Implementada y verificada.
 - HU-003 — Administrar autenticación y sesiones. Implementada y verificada.
 - HU-004 — Administrar roles y permisos.
+- HU-029 — Paleta de color opaca y tema accesible para daltonismo.
+

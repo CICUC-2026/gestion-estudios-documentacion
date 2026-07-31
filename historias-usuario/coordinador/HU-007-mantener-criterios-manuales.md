@@ -2,8 +2,8 @@
 
 **Tipo:** historia-usuario  
 **Actor:** coordinador  
-**Estado:** propuesta  
-**Última actualización:** 2026-07-17  
+**Estado:** implementada  
+**Última actualización:** 2026-07-31  
 **Feature relacionada:** [Estudios, protocolos y criterios](../../features/backlog/estudios-protocolos.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/10  
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
@@ -14,14 +14,14 @@ Como **coordinador de estudios**, quiero ingresar y ordenar manualmente criterio
 
 ## Criterios de aceptación
 
-- [ ] Cada criterio pertenece a una versión y registra tipo, categoría, título, descripción, obligatoriedad, orden, estado, fuente, observaciones e instrucciones internas.
-- [ ] El tipo solo puede ser `inclusion` o `exclusion`.
-- [ ] Crear, editar, reordenar y desactivar solo está permitido mientras la versión sea editable.
-- [ ] El orden es estable, único dentro de tipo/versión y se actualiza transaccionalmente.
-- [ ] Puede marcarse como crítico y como requeridor de respaldo, sin producir decisión automática.
-- [ ] Fuente o sección del protocolo es obligatoria antes de enviar la versión a revisión.
-- [ ] Toda mutación queda auditada.
-- [ ] La interfaz diferencia visual y textualmente inclusión, exclusión, desactivado y crítico.
+- [x] Cada criterio pertenece a una versión y registra tipo, categoría, título, descripción, obligatoriedad, orden, estado, fuente, observaciones e instrucciones internas.
+- [x] El tipo solo puede ser `inclusion` o `exclusion`.
+- [x] Crear, editar, reordenar y desactivar solo está permitido mientras la versión sea editable.
+- [x] El orden es estable, único dentro de tipo/versión y se actualiza transaccionalmente.
+- [x] Puede marcarse como crítico y como requeridor de respaldo, sin producir decisión automática.
+- [x] Fuente o sección del protocolo es obligatoria antes de enviar la versión a revisión.
+- [x] Toda mutación queda auditada.
+- [x] La interfaz diferencia visual y textualmente inclusión, exclusión, desactivado y crítico.
 
 ## Impacto sobre funcionalidades existentes
 

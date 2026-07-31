@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Validación de alcance — Plataforma CICUC</title>
+  <style>
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    :root { --ink:#152019; --green:#174d36; --mint:#dbe9df; --lime:#c8f06c; --paper:#f6f5ef; --muted:#5f6b63; --line:#b9c1bb; }
+    html,body { margin:0; color:var(--ink); background:var(--paper); font-family:Inter,Arial,sans-serif; print-color-adjust:exact; -webkit-print-color-adjust:exact; }
+    .page { position:relative; width:210mm; height:297mm; padding:18mm 18mm 16mm; page-break-after:always; overflow:hidden; }
+    .page:last-child { page-break-after:auto; }
+    header { display:flex; justify-content:space-between; align-items:center; padding-bottom:5mm; border-bottom:1px solid var(--ink); }
+    .brand { display:flex; align-items:center; gap:3mm; font-weight:800; font-size:19px; }
+    .mark { width:8mm; height:8mm; border:2px solid var(--green); border-radius:50%; position:relative; }
+    .mark:after { content:""; position:absolute; width:5mm; height:5mm; right:-2mm; bottom:-2mm; background:var(--lime); border:2px solid var(--ink); border-radius:50%; }
+    .meta,.kicker { font:700 7px/1.4 "DejaVu Sans Mono",monospace; letter-spacing:1px; text-transform:uppercase; }
+    h1 { max-width:160mm; margin:24mm 0 7mm; font-size:38px; line-height:1.02; letter-spacing:-1.8px; }
+    h2 { margin:8mm 0 4mm; font-size:23px; line-height:1.1; letter-spacing:-.8px; }
+    h3 { margin:5mm 0 2mm; font-size:13px; }
+    p { font-size:10px; line-height:1.6; }
+    .lead { max-width:156mm; font-size:14px; line-height:1.55; color:#344039; }
+    .notice { margin-top:14mm; padding:6mm; border-left:3mm solid var(--lime); background:white; font-size:9px; line-height:1.55; }
+    .cover-band { position:absolute; left:0; right:0; bottom:0; height:54mm; padding:12mm 18mm; color:white; background:var(--green); }
+    .cover-band p { max-width:150mm; margin:2mm 0 0; color:#dce8df; }
+    .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:8mm; }
+    .card { padding:5mm; background:white; border-top:2px solid var(--green); }
+    .card p { margin:0; color:#465149; font-size:9px; }
+    ul { margin:2mm 0 0; padding:0; list-style:none; }
+    li { position:relative; margin:0 0 2.5mm; padding-left:5mm; font-size:9.5px; line-height:1.45; }
+    li:before { content:""; position:absolute; left:0; top:1.5mm; width:2mm; height:2mm; border-radius:50%; background:var(--lime); border:.3mm solid var(--ink); }
+    .flow { display:grid; grid-template-columns:repeat(3,1fr); gap:3mm; margin:6mm 0; }
+    .flow div { min-height:24mm; padding:4mm; background:var(--mint); }
+    .flow b { display:block; margin-bottom:2mm; font-size:9px; }
+    .flow span { font-size:8px; line-height:1.35; color:#465149; }
+    table { width:100%; border-collapse:collapse; margin-top:4mm; }
+    th { padding:3mm 2mm; color:white; background:var(--green); font-size:7px; text-align:left; text-transform:uppercase; letter-spacing:.6px; }
+    td { padding:3mm 2mm; border-bottom:1px solid var(--line); font-size:8px; line-height:1.35; vertical-align:top; }
+    .check { white-space:nowrap; font-size:8px; }
+    .guard { padding:5mm; color:white; background:var(--green); }
+    .guard h3 { margin-top:0; color:var(--lime); }
+    .guard p { margin-bottom:0; font-size:9px; }
+    .questions { columns:2; column-gap:10mm; }
+    .questions li { break-inside:avoid; margin-bottom:4mm; }
+    .lines { height:18mm; margin-top:2mm; background:repeating-linear-gradient(to bottom,transparent 0,transparent 7mm,var(--line) 7.2mm); }
+    .signatures { display:grid; grid-template-columns:1fr 1fr; gap:14mm; margin-top:14mm; }
+    .signature { padding-top:3mm; border-top:1px solid var(--ink); font-size:8px; line-height:1.7; }
+    footer { position:absolute; left:18mm; right:18mm; bottom:8mm; display:flex; justify-content:space-between; color:var(--muted); font-size:7px; }
+    .page-no:after { content:counter(page); }
+  </style>
+</head>
+<body>
+  <section class="page">
+    <header><div class="brand"><span class="mark"></span>CICUC</div><div class="meta">Documento de validación · Versión 1.0</div></header>
+    <p class="kicker" style="margin-top:24mm">Plataforma de gestión de estudios clínicos oncológicos</p>
+    <h1>Validación de alcance con contraparte</h1>
+    <p class="lead">Una síntesis para confirmar que comprendimos correctamente el problema, los procesos, las responsabilidades y el resultado esperado antes de continuar el desarrollo.</p>
+    <div class="notice"><b>Propósito de esta reunión</b><br>Revisar las propuestas, registrar ajustes y acordar las decisiones necesarias para construir un producto operativo y verificable.</div>
+    <div class="cover-band"><span class="kicker">31 de julio de 2026</span><p>Documento para revisión clínica, operativa y administrativa. No contiene datos de pacientes ni reemplaza protocolos oficiales.</p></div>
+  </section>
+
+  <section class="page">
+    <header><div class="brand"><span class="mark"></span>CICUC</div><div class="meta">01 · Problema y resultado esperado</div></header>
+    <h2>Lo que entendimos</h2>
+    <p class="lead">La prioridad no es automatizar decisiones clínicas. Es construir una fuente de verdad operacional, actualizada y gobernada.</p>
+    <div class="grid2">
+      <div class="card"><h3>Situación actual</h3><ul><li>Información distribuida entre PDF, Word, correos y notas.</li><li>Dificultad para confirmar vigencia, estado y responsables.</li><li>Slots, pretests y tareas dependen de coordinación manual.</li><li>Los reportes no comparten todavía definiciones aprobadas.</li></ul></div>
+      <div class="card"><h3>Resultado del MVP</h3><ul><li>Inventario consultable y actualizado.</li><li>Protocolos, cohortes y criterios versionados.</li><li>Gestión trazable de slots, pretesting y tareas.</li><li>Reportes con fecha de corte y definiciones visibles.</li></ul></div>
+    </div>
+    <h2>Qué podrá hacer un usuario autorizado</h2>
+    <ul><li>Buscar estudios por patología, línea, biomarcador, centro y estado.</li><li>Ver qué versión de protocolo está vigente, quién la confirmó y cuándo.</li><li>Distinguir reclutamiento, seguimiento, hold, cierre y archivo.</li><li>Gestionar oportunidades operativas sin emitir elegibilidad.</li><li>Reconstruir cambios relevantes mediante auditoría.</li></ul>
+    <div class="guard"><h3>Principio no negociable</h3><p>La plataforma apoya la organización y la preselección administrativa. La elegibilidad final corresponde siempre al investigador principal y al equipo del estudio.</p></div>
+    <footer><span>Validación de alcance · CICUC</span><span>2 / 6</span></footer>
+  </section>
+
+  <section class="page">
+    <header><div class="brand"><span class="mark"></span>CICUC</div><div class="meta">02 · Inventario y ciclo operativo</div></header>
+    <h2>Un ciclo de vida compartido</h2>
+    <p>Proponemos separar el estado operativo del estudio de la disponibilidad de cupos o slots.</p>
+    <div class="flow">
+      <div><b>Preactivación</b><span>Próximo a abrir; permite anticipar oportunidades.</span></div>
+      <div><b>Activo reclutando</b><span>Abierto y buscando participantes.</span></div>
+      <div><b>Activo en seguimiento</b><span>No recluta; mantiene participantes en control.</span></div>
+      <div><b>Hold</b><span>Reclutamiento detenido temporalmente.</span></div>
+      <div><b>Cerrado</b><span>Sin actividad operacional vigente.</span></div>
+      <div><b>Archivado</b><span>Disponible únicamente para historia y trazabilidad.</span></div>
+    </div>
+    <h2>Información mínima propuesta</h2>
+    <div class="grid2">
+      <ul><li>Código, nombre y título oficial.</li><li>Patrocinador, fase y diseño.</li><li>Patología, escenario y línea.</li><li>Cohortes, ramas y biomarcadores.</li><li>Centro e investigador responsable.</li></ul>
+      <ul><li>Coordinadora responsable.</li><li>Estado operativo y disponibilidad.</li><li>Versión vigente del protocolo.</li><li>Fecha, fuente y responsable de verificación.</li><li>Próxima fecha de revisión.</li></ul>
+    </div>
+    <div class="notice"><b>Necesitamos confirmar</b><br>Quién mantiene cada estudio, quién reemplaza a esa persona, cada cuánto se revisa la información y cuándo debe mostrarse como desactualizada.</div>
+    <footer><span>Validación de alcance · CICUC</span><span>3 / 6</span></footer>
+  </section>
+
+  <section class="page">
+    <header><div class="brand"><span class="mark"></span>CICUC</div><div class="meta">03 · Slots, lista de espera y pretesting</div></header>
+    <h2>Flujo propuesto para slots</h2>
+    <div class="flow">
+      <div><b>1 · Identificar</b><span>Registrar una oportunidad potencial.</span></div>
+      <div><b>2 · Solicitar</b><span>Pedir slot o ingresar a lista de espera.</span></div>
+      <div><b>3 · Priorizar</b><span>Prioridad operacional justificada.</span></div>
+      <div><b>4 · Confirmar</b><span>Registrar respuesta del patrocinador.</span></div>
+      <div><b>5 · Revisar</b><span>Control humano de datos y criterios vigentes.</span></div>
+      <div><b>6 · Resolver</b><span>Utilizar, liberar o registrar vencimiento.</span></div>
+    </div>
+    <p>La lista de espera no constituye un ranking clínico. Todo movimiento debe conservar fecha, fuente, responsable y motivo.</p>
+    <h2>Seguimiento propuesto para pretesting</h2>
+    <div class="grid2">
+      <div class="card"><h3>Información</h3><ul><li>Prueba requerida y estudio relacionado.</li><li>Fecha de indicación y toma.</li><li>Estado, fuente y vigencia.</li><li>Responsable y próxima acción.</li></ul></div>
+      <div class="card"><h3>Recordatorios</h3><ul><li>Pruebas pendientes o próximas a vencer.</li><li>Datos dinámicos que requieren revisión.</li><li>Ventanas y tareas próximas.</li><li>Escalamiento a responsables definidos.</li></ul></div>
+    </div>
+    <div class="guard"><h3>Límite funcional</h3><p>Los recordatorios son administrativos. No cambian automáticamente una preselección, no reservan cupos y no generan alertas clínicas autónomas.</p></div>
+    <footer><span>Validación de alcance · CICUC</span><span>4 / 6</span></footer>
+  </section>
+
+  <section class="page">
+    <header><div class="brand"><span class="mark"></span>CICUC</div><div class="meta">04 · Usuarios, datos y límites</div></header>
+    <h2>Usuarios y responsabilidad</h2>
+    <div class="grid2">
+      <ul><li>Investigador principal.</li><li>Médico investigador u oncólogo derivador.</li><li>Enfermera coordinadora.</li><li>Jefatura de enfermería.</li></ul>
+      <ul><li>Coordinación administrativa.</li><li>Factibilidad y preactivación.</li><li>Administración técnica.</li><li>Auditor autorizado.</li></ul>
+    </div>
+    <p>Los permisos se definirán por centro, estudio, acción y relación con el recurso. Participar en una reunión o poseer un cargo no concede automáticamente acceso clínico.</p>
+    <h2>Antes de utilizar datos reales</h2>
+    <ul><li>Aprobar datos mínimos y fundamento o consentimiento aplicable.</li><li>Definir permisos de visualización y modificación.</li><li>Separar información identificatoria, clínica y operativa.</li><li>Definir retención, eliminación y custodia documental.</li><li>Aprobar descargas, exportaciones, auditoría y respuesta ante incidentes.</li></ul>
+    <h2>Fuera del MVP administrativo</h2>
+    <div class="grid2">
+      <div class="card"><p>Elegibilidad automática, extracción automática de protocolos y recomendaciones clínicas.</p></div>
+      <div class="card"><p>Audio en comités, integración con ficha clínica y mensajería externa.</p></div>
+    </div>
+    <div class="notice"><b>Entorno inicial</b><br>Hasta que exista aprobación institucional, el desarrollo, las pruebas y las demostraciones utilizarán únicamente datos ficticios.</div>
+    <footer><span>Validación de alcance · CICUC</span><span>5 / 6</span></footer>
+  </section>
+
+  <section class="page">
+    <header><div class="brand"><span class="mark"></span>CICUC</div><div class="meta">05 · Decisiones y validación</div></header>
+    <h2>Decisiones solicitadas</h2>
+    <table>
+      <thead><tr><th>Tema</th><th>Propuesta</th><th>Validación</th></tr></thead>
+      <tbody>
+        <tr><td>Estados</td><td>Preactivación, reclutamiento, seguimiento, hold, cerrado y archivado.</td><td class="check">☐ Aprobar ☐ Ajustar</td></tr>
+        <tr><td>Inventario</td><td>Coordinadora responsable, supervisión y fecha de próxima revisión.</td><td class="check">☐ Aprobar ☐ Ajustar</td></tr>
+        <tr><td>Slots</td><td>Solicitud, espera, asignación, uso, liberación y vencimiento.</td><td class="check">☐ Aprobar ☐ Ajustar</td></tr>
+        <tr><td>Pretesting</td><td>Tareas administrativas con fechas, vigencia y responsables.</td><td class="check">☐ Aprobar ☐ Ajustar</td></tr>
+        <tr><td>Pacientes</td><td>Solo datos ficticios hasta aprobar privacidad y permisos.</td><td class="check">☐ Aprobar ☐ Ajustar</td></tr>
+        <tr><td>Elegibilidad</td><td>Siempre corresponde al investigador y al equipo clínico.</td><td class="check">☐ Aprobar ☐ Ajustar</td></tr>
+        <tr><td>IA y voz</td><td>Fuera del MVP administrativo inicial.</td><td class="check">☐ Aprobar ☐ Ajustar</td></tr>
+        <tr><td>Reportes</td><td>Implementar después de aprobar definiciones de KPI.</td><td class="check">☐ Aprobar ☐ Ajustar</td></tr>
+      </tbody>
+    </table>
+    <h3>Acuerdos y observaciones</h3><div class="lines"></div>
+    <div class="signatures">
+      <div class="signature"><b>Por CICUC</b><br>Nombre:<br>Cargo:<br>Firma y fecha:</div>
+      <div class="signature"><b>Por el equipo del proyecto</b><br>Nombre:<br>Cargo:<br>Firma y fecha:</div>
+    </div>
+    <footer><span>Validación de alcance · CICUC</span><span>6 / 6</span></footer>
+  </section>
+</body>
+</html>

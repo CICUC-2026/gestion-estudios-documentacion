@@ -2,8 +2,8 @@
 
 **Tipo:** historia-usuario  
 **Actor:** coordinador  
-**Estado:** propuesta  
-**Última actualización:** 2026-07-17  
+**Estado:** implementada  
+**Última actualización:** 2026-07-31  
 **Feature relacionada:** [Estudios, protocolos y criterios](../../features/backlog/estudios-protocolos.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/12  
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
@@ -14,13 +14,13 @@ Como **coordinador de estudios**, quiero comparar datos y criterios estructurado
 
 ## Criterios de aceptación
 
-- [ ] Solo se comparan versiones del mismo estudio.
-- [ ] La vista identifica campos y criterios agregados, retirados o modificados mediante correspondencias explícitas.
-- [ ] Los criterios copiados conservan un identificador de origen que permite correspondencia determinista.
-- [ ] No se compara ni interpreta automáticamente el contenido de archivos adjuntos.
-- [ ] La comparación no modifica versiones, criterios o estados.
-- [ ] Se muestran número, estado, fecha y responsable de cada versión.
-- [ ] El resultado es accesible por teclado y no depende solo del color.
+- [x] Solo se comparan versiones del mismo estudio.
+- [x] La vista identifica campos y criterios agregados, retirados o modificados mediante correspondencias explícitas.
+- [x] Los criterios copiados conservan un identificador de origen que permite correspondencia determinista.
+- [x] No se compara ni interpreta automáticamente el contenido de archivos adjuntos.
+- [x] La comparación no modifica versiones, criterios o estados.
+- [x] Se muestran número, estado, fecha y responsable de cada versión.
+- [x] El resultado es accesible por teclado y no depende solo del color.
 
 ## Impacto sobre funcionalidades existentes
 

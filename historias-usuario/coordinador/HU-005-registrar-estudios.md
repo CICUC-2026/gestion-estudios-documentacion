@@ -2,8 +2,8 @@
 
 **Tipo:** historia-usuario  
 **Actor:** coordinador  
-**Estado:** propuesta  
-**Última actualización:** 2026-07-17  
+**Estado:** implementada  
+**Última actualización:** 2026-07-31  
 **Feature relacionada:** [Estudios, protocolos y criterios](../../features/backlog/estudios-protocolos.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/8  
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
@@ -14,14 +14,14 @@ Como **coordinador de estudios**, quiero registrar y mantener una ficha estructu
 
 ## Criterios de aceptación
 
-- [ ] Un usuario autorizado crea un estudio inicialmente en `borrador`.
-- [ ] Código interno e identificador son únicos dentro de la institución definida.
-- [ ] La ficha registra título, patrocinador, organización, patología, subtipo, fase, diseño, objetivo, fechas, centro, observaciones y estados.
-- [ ] Listado y detalle muestran responsable, estado, versión vigente, última revisión y pendientes disponibles.
-- [ ] Listado admite paginación, búsqueda, filtros y orden explícitos.
-- [ ] Actualizar y archivar conservan autor, instante, valores anteriores/nuevos y motivo cuando corresponde.
-- [ ] No se elimina físicamente un estudio desde la API o interfaz.
-- [ ] Backend deniega creación, edición o lectura fuera del alcance autorizado.
+- [x] Un usuario autorizado crea un estudio inicialmente en `borrador`.
+- [x] Código interno e identificador son únicos dentro de la institución definida.
+- [x] La ficha registra título, patrocinador, organización, patología, subtipo, fase, diseño, objetivo, fechas, centro, observaciones y estados.
+- [x] Listado y detalle muestran responsable, estado, versión vigente, última revisión y pendientes disponibles.
+- [x] Listado admite paginación, búsqueda, filtros y orden explícitos.
+- [x] Actualizar y archivar conservan autor, instante, valores anteriores/nuevos y motivo cuando corresponde.
+- [x] No se elimina físicamente un estudio desde la API o interfaz.
+- [x] Backend deniega creación, edición o lectura fuera del alcance autorizado.
 
 ## Impacto sobre funcionalidades existentes
 

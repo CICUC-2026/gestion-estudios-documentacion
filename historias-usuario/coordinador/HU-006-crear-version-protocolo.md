@@ -2,8 +2,8 @@
 
 **Tipo:** historia-usuario  
 **Actor:** coordinador  
-**Estado:** propuesta  
-**Última actualización:** 2026-07-17  
+**Estado:** implementada  
+**Última actualización:** 2026-07-31  
 **Feature relacionada:** [Estudios, protocolos y criterios](../../features/backlog/estudios-protocolos.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/9  
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
@@ -14,13 +14,13 @@ Como **coordinador de estudios**, quiero crear y preparar versiones de protocolo
 
 ## Criterios de aceptación
 
-- [ ] Una versión pertenece a un único estudio y comienza en `borrador`.
-- [ ] Registra nombre/número, fecha oficial, fecha de carga, autor, observaciones, resumen, motivo y versión reemplazada propuesta.
-- [ ] Número o nombre de versión es único por estudio.
-- [ ] Solo `borrador` y `en_revision` admiten edición autorizada.
-- [ ] Una versión puede copiar criterios desde otra versión del mismo estudio, creando identificadores nuevos y conservando origen.
-- [ ] No es obligatorio adjuntar el protocolo completo.
-- [ ] Toda creación, edición, copia y cambio a revisión queda auditado.
+- [x] Una versión pertenece a un único estudio y comienza en `borrador`.
+- [x] Registra nombre/número, fecha oficial, fecha de carga, autor, observaciones, resumen, motivo y versión reemplazada propuesta.
+- [x] Número o nombre de versión es único por estudio.
+- [x] Solo `borrador` y `en_revision` admiten edición autorizada.
+- [x] Una versión puede copiar criterios desde otra versión del mismo estudio, creando identificadores nuevos y conservando origen.
+- [x] No es obligatorio adjuntar el protocolo completo.
+- [x] Toda creación, edición, copia y cambio a revisión queda auditado.
 
 ## Impacto sobre funcionalidades existentes
 

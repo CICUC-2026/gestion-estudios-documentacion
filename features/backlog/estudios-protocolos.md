@@ -1,6 +1,6 @@
 # Feature — Estudios, protocolos y criterios
 
-**Estado:** backlog  
+**Estado:** completada  
 **Tanda:** 2
 
 ## Objetivo

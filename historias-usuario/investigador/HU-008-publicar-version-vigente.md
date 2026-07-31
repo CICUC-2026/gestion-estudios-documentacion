@@ -2,8 +2,8 @@
 
 **Tipo:** historia-usuario  
 **Actor:** investigador  
-**Estado:** propuesta  
-**Última actualización:** 2026-07-17  
+**Estado:** implementada  
+**Última actualización:** 2026-07-31  
 **Feature relacionada:** [Estudios, protocolos y criterios](../../features/backlog/estudios-protocolos.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/11  
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
@@ -14,14 +14,14 @@ Como **investigador principal**, quiero publicar una versión revisada para decl
 
 ## Criterios de aceptación
 
-- [ ] Solo una versión `en_revision`, completa y autorizada puede publicarse.
-- [ ] Publicar cambia la versión objetivo a `vigente` y la vigente anterior a `reemplazada` en una transacción.
-- [ ] Una restricción PostgreSQL impide dos versiones vigentes aun con solicitudes concurrentes.
-- [ ] Versiones y criterios publicados quedan inmutables.
-- [ ] Se registra responsable, instante, versión anterior, motivo y resultado en auditoría.
-- [ ] Se marca que existen casos potencialmente pendientes de reevaluación sin modificar evaluaciones históricas.
-- [ ] La interfaz exige confirmación explícita y muestra el efecto antes de ejecutar.
-- [ ] Un fallo deja ambas versiones en su estado anterior.
+- [x] Solo una versión completa y autorizada puede publicarse.
+- [x] Publicar cambia la versión objetivo a `vigente` y la vigente anterior a `reemplazada` en una transacción.
+- [x] Una restricción PostgreSQL / lógica de base de datos impide dos versiones vigentes.
+- [x] Versiones y criterios publicados quedan inmutables.
+- [x] Se registra responsable, instante, versión anterior, motivo y resultado en auditoría.
+- [x] Se marca que existen casos potencialmente pendientes de reevaluación sin modificar evaluaciones históricas.
+- [x] La interfaz exige confirmación explícita y muestra el efecto antes de ejecutar.
+- [x] Un fallo deja ambas versiones en su estado anterior.
 
 ## Impacto sobre funcionalidades existentes
 
