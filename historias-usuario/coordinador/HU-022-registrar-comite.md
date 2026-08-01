@@ -1,12 +1,12 @@
 # HU-022 — Registrar reuniones y acuerdos de comité
 
-**Tipo:** historia-usuario  
-**Actor:** coordinador  
-**Estado:** propuesta  
-**Bloqueada por:** HU-004, ADR-007 y validación del alcance documental  
-**Última actualización:** 2026-07-17  
-**Feature relacionada:** [Tareas, comités y notificaciones](../../features/backlog/tareas-comites-notificaciones.md)  
-**Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/25  
+**Tipo:** historia-usuario
+**Actor:** coordinador
+**Estado:** propuesta
+**Bloqueada por:** HU-004, ADR-007 y validación del alcance documental
+**Última actualización:** 2026-07-17
+**Feature relacionada:** [Tareas, comités y notificaciones](../../features/backlog/tareas-comites-notificaciones.md)
+**Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/25
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
 
 ## Historia

@@ -50,6 +50,8 @@ Un usuario autorizado podrá:
 5. gestionar slots, lista de espera, pretesting y tareas;
 6. consultar reportes operativos con fecha de corte;
 7. reconstruir cambios relevantes mediante auditoría.
+8. disponer de una arquitectura modular y APIs documentadas, preparada para
+   integraciones graduales con sistemas institucionales autorizados.
 
 ## 4. Alcance que no se propone para el MVP
 
@@ -63,7 +65,18 @@ Un usuario autorizado podrá:
 Estas capacidades podrán evaluarse posteriormente con validación humana,
 evidencia trazable, controles de seguridad y aprobación institucional.
 
-## 5. Ciclo de vida propuesto
+La preparación para interoperabilidad no significa que el MVP se conectará
+automáticamente con fichas clínicas u otros sistemas. Cada integración futura
+requerirá alcance, contrato, permisos, seguridad y pruebas específicas.
+
+## 5. Plan de ejecución propuesto
+
+- **Mes 1:** levantamiento de información, requerimientos y flujo de
+  procesos/arquitectura.
+- **Mes 2:** desarrollo de MVP funcional básico y validación con usuarios.
+- **Mes 3:** puesta en marcha y marcha blanca.
+
+## 6. Ciclo de vida propuesto
 
 | Estado | Definición propuesta |
 |---|---|
@@ -77,7 +90,7 @@ evidencia trazable, controles de seguridad y aprobación institucional.
 El estado del estudio debe permanecer separado de la disponibilidad de cupos o
 slots.
 
-## 6. Información mínima del inventario
+## 7. Información mínima del inventario
 
 - código, nombre corto y título oficial;
 - patrocinador, fase y diseño;
@@ -90,7 +103,7 @@ slots.
 - fecha, fuente y responsable de la última verificación;
 - próxima fecha de revisión.
 
-## 7. Flujo propuesto de slots
+## 8. Flujo propuesto de slots
 
 1. Identificar anticipadamente una oportunidad potencial.
 2. Solicitar un slot o registrar ingreso a lista de espera.
@@ -103,7 +116,7 @@ slots.
 La lista de espera no constituye un ranking clínico. Cada movimiento debe
 registrar responsable, fecha, fuente y motivo.
 
-## 8. Flujo propuesto de pretesting
+## 9. Flujo propuesto de pretesting
 
 La plataforma permitirá seguir:
 
@@ -119,7 +132,7 @@ La plataforma permitirá seguir:
 Los recordatorios serán administrativos y no modificarán automáticamente una
 preselección ni reservarán cupos.
 
-## 9. Usuarios propuestos
+## 10. Usuarios propuestos
 
 - investigador principal;
 - médico investigador u oncólogo derivador;
@@ -134,7 +147,7 @@ Los permisos se definirán según centro, estudio, acción y relación con el
 recurso. Un cargo o participación en una reunión no concederá automáticamente
 acceso clínico.
 
-## 10. Datos y resguardos
+## 11. Datos y resguardos
 
 Antes de utilizar información real, CICUC deberá aprobar:
 
@@ -150,7 +163,104 @@ Antes de utilizar información real, CICUC deberá aprobar:
 Hasta esa aprobación, el desarrollo y las demostraciones utilizarán únicamente
 datos ficticios.
 
-## 11. Reportes propuestos
+## 12. Distribución propuesta de responsabilidades sobre datos
+
+Esta distribución debe incorporarse a un contrato y a un anexo de tratamiento
+de datos revisados por asesoría jurídica.
+
+### CICUC como responsable de los datos
+
+CICUC, como institución que determina los fines y medios del tratamiento,
+debería asumir la responsabilidad por:
+
+- definir la finalidad y base de licitud de cada tratamiento;
+- determinar qué datos pueden incorporarse y su plazo de conservación;
+- asegurar la legitimidad, exactitud y procedencia de los datos entregados;
+- obtener consentimientos o autorizaciones cuando correspondan;
+- gestionar derechos de los titulares y comunicaciones institucionales;
+- autorizar usuarios, perfiles, integraciones, exportaciones y subencargados;
+- custodiar las fichas clínicas y documentos fuente;
+- adoptar las decisiones clínicas y operacionales basadas en la información.
+
+### ADYAC como encargado o proveedor tecnológico
+
+ADYAC trataría datos únicamente por cuenta de CICUC y conforme a instrucciones
+documentadas. Sus obligaciones deberían limitarse a:
+
+- construir y operar los componentes contratados;
+- aplicar controles técnicos y organizativos proporcionales al riesgo;
+- mantener confidencialidad y mínimo privilegio;
+- no utilizar datos para finalidades propias;
+- informar incidentes o instrucciones que parezcan contrarias al contrato;
+- colaborar en auditorías y solicitudes dentro del alcance acordado;
+- devolver o eliminar datos al finalizar, según instrucciones y obligaciones
+  legales aplicables.
+
+ADYAC no debería asumir responsabilidad por la legalidad de los datos
+seleccionados por CICUC, la falta de consentimiento o autorización institucional,
+la inexactitud de antecedentes ingresados por usuarios, el uso fuera del alcance
+contratado ni decisiones clínicas u operacionales tomadas por CICUC. Esto no
+excluye la responsabilidad propia de ADYAC por incumplimiento contractual, dolo,
+culpa grave o vulneración de sus deberes legales directos.
+
+## 13. Mecanismos contractuales y de protección recomendados
+
+Antes de producción se recomienda formalizar:
+
+1. **Contrato principal y alcance:** entregables, exclusiones, dependencias,
+   criterios de aceptación y control de cambios.
+2. **Anexo de tratamiento de datos:** roles, instrucciones, categorías de datos,
+   finalidades, retención, devolución, eliminación y asistencia.
+3. **Anexo de seguridad:** cifrado, accesos, registros, respaldo, vulnerabilidades,
+   continuidad, ambientes y evidencia de pruebas.
+4. **Matriz de responsabilidades:** quién autoriza usuarios, corrige datos,
+   responde solicitudes, comunica incidentes y decide restauraciones.
+5. **Subencargados:** autorización previa, listado de proveedores, ubicación de
+   datos y obligaciones equivalentes.
+6. **Incidentes:** canal, plazos de aviso, preservación de evidencia,
+   investigación y coordinación de comunicaciones.
+7. **Indemnidad recíproca:** CICUC responde por reclamos derivados de datos,
+   instrucciones o decisiones bajo su control; ADYAC por incumplimientos
+   atribuibles a sus propias obligaciones.
+8. **Límite de responsabilidad:** monto máximo negociado, exclusión de daños
+   indirectos y excepciones para dolo, culpa grave y materias que la ley no
+   permita limitar.
+9. **Propiedad intelectual:** titularidad del desarrollo específico, componentes
+   preexistentes, licencias, software de terceros y continuidad de uso.
+10. **Aceptación y garantía:** pruebas, plazo de observaciones, defectos cubiertos
+    y diferencia entre corrección y nueva funcionalidad.
+11. **Seguros:** evaluar responsabilidad civil profesional, ciberseguridad y
+    cobertura de incidentes de acuerdo con el riesgo real.
+12. **Solución de controversias:** ley aplicable, jurisdicción, notificación y
+    mecanismo previo de escalamiento y negociación.
+
+Ninguna cláusula puede impedir que un tercero presente una reclamación. El
+objetivo es asignar responsabilidades de forma clara, reducir la probabilidad de
+incidentes y definir quién soporta contractualmente sus consecuencias.
+
+## 14. Marco legal de referencia
+
+- Ley Nº 19.628, sobre protección de la vida privada, mientras continúe vigente.
+- Ley Nº 21.719, que moderniza la protección de datos y entra en vigencia el
+  1 de diciembre de 2026. Distingue al responsable que decide fines y medios y
+  al encargado que trata datos por su cuenta, exigiendo medidas adecuadas al
+  riesgo.
+- Ley Nº 20.584: la información de ficha clínica y estudios asociados es dato
+  sensible; su custodia, acceso, confidencialidad e interoperabilidad están
+  sujetas a reglas sectoriales.
+- Ley Nº 21.663, Marco de Ciberseguridad: contempla medidas permanentes para
+  prevenir, reportar y resolver incidentes en las instituciones alcanzadas.
+- Ley Nº 17.336: protege programas computacionales y documentación; el software
+  desarrollado por encargo se presume cedido al cliente salvo pacto escrito en
+  contrario.
+- Código Civil, artículo 1558: permite modificar contractualmente determinadas
+  reglas de responsabilidad, sin convertir una exención total en garantía de
+  inmunidad.
+
+Esta sección es una propuesta de gestión contractual, no un informe jurídico.
+El contrato definitivo debe ser revisado por abogados de ambas partes.
+
+## 15. Reportes propuestos
 
 - estudios por estado, patología y centro;
 - reclutamiento comprometido versus real;
@@ -163,7 +273,7 @@ datos ficticios.
 Cada indicador deberá contar con definición, fuente, periodo, fecha de corte,
 unidad de análisis y permisos aprobados.
 
-## 12. Decisiones solicitadas a CICUC
+## 16. Decisiones solicitadas a CICUC
 
 | Tema | Propuesta | Validación |
 |---|---|---|
@@ -177,8 +287,10 @@ unidad de análisis y permisos aprobados.
 | Elegibilidad | Siempre corresponde al investigador y equipo clínico | ☐ Aprobar ☐ Ajustar |
 | IA y voz | Fuera del MVP administrativo | ☐ Aprobar ☐ Ajustar |
 | Reportes | Implementar después de aprobar definiciones de KPI | ☐ Aprobar ☐ Ajustar |
+| Responsabilidad de datos | CICUC como responsable; ADYAC como encargado bajo instrucciones | ☐ Aprobar ☐ Ajustar |
+| Contrato de datos | Suscribir anexo de tratamiento y seguridad antes de producción | ☐ Aprobar ☐ Ajustar |
 
-## 13. Preguntas para la reunión
+## 17. Preguntas para la reunión
 
 1. ¿Quién mantiene cada estudio y quién lo reemplaza?
 2. ¿Cada cuánto debe confirmarse la información?
@@ -190,8 +302,11 @@ unidad de análisis y permisos aprobados.
 8. ¿Dónde se custodiarán protocolos confidenciales?
 9. ¿Qué puede consultar un oncólogo externo?
 10. ¿Cómo se definen los compromisos y KPI de reclutamiento?
+11. ¿Quién actuará formalmente como responsable de datos dentro de CICUC?
+12. ¿Qué proveedores o subencargados institucionales están autorizados?
+13. ¿Qué procedimiento institucional se aplicará ante incidentes?
 
-## 14. Registro de validación
+## 18. Registro de validación
 
 **Fecha de reunión:** _________________________________________________
 
@@ -215,4 +330,3 @@ ______________________________________________________________________
 | Cargo: ___________________________ | Cargo: ___________________________ |
 | Firma: ___________________________ | Firma: ___________________________ |
 | Fecha: ___________________________ | Fecha: ___________________________ |
-

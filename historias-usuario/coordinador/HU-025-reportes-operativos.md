@@ -1,12 +1,12 @@
 # HU-025 — Consultar reportes operativos
 
-**Tipo:** historia-usuario  
-**Actor:** coordinador  
-**Estado:** propuesta  
-**Bloqueada por:** dominios fuente, HU-004 y catálogo de reportes validado  
-**Última actualización:** 2026-07-17  
-**Feature relacionada:** [Reportes y auditoría](../../features/backlog/reportes-auditoria.md)  
-**Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/28  
+**Tipo:** historia-usuario
+**Actor:** coordinador
+**Estado:** propuesta
+**Bloqueada por:** dominios fuente, HU-004 y catálogo de reportes validado
+**Última actualización:** 2026-07-17
+**Feature relacionada:** [Reportes y auditoría](../../features/backlog/reportes-auditoria.md)
+**Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/28
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
 
 ## Historia

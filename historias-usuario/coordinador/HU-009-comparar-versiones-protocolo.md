@@ -1,11 +1,11 @@
 # HU-009 — Comparar versiones de protocolo
 
-**Tipo:** historia-usuario  
-**Actor:** coordinador  
-**Estado:** implementada  
-**Última actualización:** 2026-07-31  
-**Feature relacionada:** [Estudios, protocolos y criterios](../../features/backlog/estudios-protocolos.md)  
-**Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/12  
+**Tipo:** historia-usuario
+**Actor:** coordinador
+**Estado:** implementada
+**Última actualización:** 2026-07-31
+**Feature relacionada:** [Estudios, protocolos y criterios](../../features/backlog/estudios-protocolos.md)
+**Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/12
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
 
 ## Historia

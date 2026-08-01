@@ -5,7 +5,7 @@
 **Estado:** propuesta  
 **Última actualización:** 2026-07-25  
 **Feature relacionada:** [Fundamentos de la plataforma](../../features/en-desarrollo/fundamentos-plataforma.md)  
-**Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/32  
+**Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/38
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
 
 ## Historia

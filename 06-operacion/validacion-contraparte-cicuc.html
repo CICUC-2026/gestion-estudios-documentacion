@@ -65,12 +65,15 @@
     <p class="lead">La prioridad no es automatizar decisiones clínicas. Es construir una fuente de verdad operacional, actualizada y gobernada.</p>
     <div class="grid2">
       <div class="card"><h3>Situación actual</h3><ul><li>Información distribuida entre PDF, Word, correos y notas.</li><li>Dificultad para confirmar vigencia, estado y responsables.</li><li>Slots, pretests y tareas dependen de coordinación manual.</li><li>Los reportes no comparten todavía definiciones aprobadas.</li></ul></div>
-      <div class="card"><h3>Resultado del MVP</h3><ul><li>Inventario consultable y actualizado.</li><li>Protocolos, cohortes y criterios versionados.</li><li>Gestión trazable de slots, pretesting y tareas.</li><li>Reportes con fecha de corte y definiciones visibles.</li></ul></div>
+      <div class="card"><h3>Resultado del MVP</h3><ul><li>Identificación de usuarios, centros, roles y permisos.</li><li>Inventario y ciclo de vida de estudios.</li><li>Selección y manejo de candidatos.</li><li>Gestión de cupos, listas de espera y alertas.</li><li>Arquitectura modular, APIs y documentación.</li></ul></div>
     </div>
     <h2>Qué podrá hacer un usuario autorizado</h2>
     <ul><li>Buscar estudios por patología, línea, biomarcador, centro y estado.</li><li>Ver qué versión de protocolo está vigente, quién la confirmó y cuándo.</li><li>Distinguir reclutamiento, seguimiento, hold, cierre y archivo.</li><li>Gestionar oportunidades operativas sin emitir elegibilidad.</li><li>Reconstruir cambios relevantes mediante auditoría.</li></ul>
     <div class="guard"><h3>Principio no negociable</h3><p>La plataforma apoya la organización y la preselección administrativa. La elegibilidad final corresponde siempre al investigador principal y al equipo del estudio.</p></div>
-    <footer><span>Validación de alcance · CICUC</span><span>2 / 6</span></footer>
+    <p>Las APIs prepararán una interoperabilidad gradual con sistemas autorizados. La conexión con ficha clínica u otras plataformas no forma parte del MVP mientras no exista una definición institucional específica.</p>
+    <h3>Plan de ejecución</h3>
+    <div class="flow"><div><b>Mes 1</b><span>Levantamiento, requerimientos y flujo de procesos/arquitectura.</span></div><div><b>Mes 2</b><span>MVP funcional básico y validación con usuarios.</span></div><div><b>Mes 3</b><span>Puesta en marcha y marcha blanca.</span></div></div>
+    <footer><span>Validación de alcance · CICUC</span><span>2 / 8</span></footer>
   </section>
 
   <section class="page">
@@ -91,7 +94,7 @@
       <ul><li>Coordinadora responsable.</li><li>Estado operativo y disponibilidad.</li><li>Versión vigente del protocolo.</li><li>Fecha, fuente y responsable de verificación.</li><li>Próxima fecha de revisión.</li></ul>
     </div>
     <div class="notice"><b>Necesitamos confirmar</b><br>Quién mantiene cada estudio, quién reemplaza a esa persona, cada cuánto se revisa la información y cuándo debe mostrarse como desactualizada.</div>
-    <footer><span>Validación de alcance · CICUC</span><span>3 / 6</span></footer>
+    <footer><span>Validación de alcance · CICUC</span><span>3 / 8</span></footer>
   </section>
 
   <section class="page">
@@ -112,7 +115,7 @@
       <div class="card"><h3>Recordatorios</h3><ul><li>Pruebas pendientes o próximas a vencer.</li><li>Datos dinámicos que requieren revisión.</li><li>Ventanas y tareas próximas.</li><li>Escalamiento a responsables definidos.</li></ul></div>
     </div>
     <div class="guard"><h3>Límite funcional</h3><p>Los recordatorios son administrativos. No cambian automáticamente una preselección, no reservan cupos y no generan alertas clínicas autónomas.</p></div>
-    <footer><span>Validación de alcance · CICUC</span><span>4 / 6</span></footer>
+    <footer><span>Validación de alcance · CICUC</span><span>4 / 8</span></footer>
   </section>
 
   <section class="page">
@@ -131,11 +134,45 @@
       <div class="card"><p>Audio en comités, integración con ficha clínica y mensajería externa.</p></div>
     </div>
     <div class="notice"><b>Entorno inicial</b><br>Hasta que exista aprobación institucional, el desarrollo, las pruebas y las demostraciones utilizarán únicamente datos ficticios.</div>
-    <footer><span>Validación de alcance · CICUC</span><span>5 / 6</span></footer>
+    <footer><span>Validación de alcance · CICUC</span><span>5 / 8</span></footer>
   </section>
 
   <section class="page">
-    <header><div class="brand"><span class="mark"></span>CICUC</div><div class="meta">05 · Decisiones y validación</div></header>
+    <header><div class="brand"><span class="mark"></span>CICUC</div><div class="meta">05 · Responsabilidad sobre los datos</div></header>
+    <h2>Roles propuestos para el tratamiento</h2>
+    <p class="lead">La asignación debe formalizarse en el contrato y en un anexo de tratamiento de datos antes de operar con información real.</p>
+    <div class="grid2">
+      <div class="card"><h3>CICUC · Responsable de los datos</h3><ul><li>Define finalidades, base de licitud y datos permitidos.</li><li>Obtiene consentimientos o autorizaciones.</li><li>Responde por procedencia, exactitud y conservación.</li><li>Autoriza usuarios, integraciones y exportaciones.</li><li>Gestiona derechos de titulares y decisiones clínicas.</li><li>Custodia fichas y documentos fuente.</li></ul></div>
+      <div class="card"><h3>ADYAC · Encargado tecnológico</h3><ul><li>Trata datos solo bajo instrucciones documentadas.</li><li>Aplica seguridad proporcional al riesgo.</li><li>Mantiene confidencialidad y mínimo privilegio.</li><li>No usa los datos para finalidades propias.</li><li>Informa incidentes y colabora en su investigación.</li><li>Devuelve o elimina datos según instrucciones.</li></ul></div>
+    </div>
+    <div class="guard"><h3>Asignación equilibrada</h3><p>ADYAC no asumirá responsabilidad por la legalidad, procedencia o exactitud de datos seleccionados por CICUC, por instrucciones institucionales, por usos fuera del alcance ni por decisiones clínicas. ADYAC sí conserva responsabilidad por sus propios incumplimientos contractuales y deberes legales directos.</p></div>
+    <h2>Protección buscada</h2>
+    <p>Ninguna cláusula puede impedir que un tercero presente una reclamación. El objetivo es prevenir incidentes, documentar diligencia y asignar contractualmente quién responde por los riesgos que controla.</p>
+    <div class="notice"><b>Revisión jurídica</b><br>Esta propuesta no reemplaza la revisión del contrato por abogados de CICUC y ADYAC.</div>
+    <footer><span>Validación de alcance · CICUC</span><span>6 / 8</span></footer>
+  </section>
+
+  <section class="page">
+    <header><div class="brand"><span class="mark"></span>CICUC</div><div class="meta">06 · Protecciones contractuales y técnicas</div></header>
+    <h2>Mecanismos recomendados</h2>
+    <div class="grid2">
+      <ul><li>Contrato con alcance, exclusiones, aceptación y control de cambios.</li><li>Anexo de tratamiento de datos e instrucciones escritas.</li><li>Anexo de seguridad, respaldo, accesos y vulnerabilidades.</li><li>Matriz de responsabilidades ante solicitudes e incidentes.</li><li>Autorización y obligaciones equivalentes para subencargados.</li><li>Procedimiento de notificación y preservación de evidencia.</li></ul>
+      <ul><li>Indemnidad recíproca según el riesgo controlado por cada parte.</li><li>Límite de responsabilidad y exclusión de daños indirectos, con excepciones legales.</li><li>Propiedad intelectual, licencias y software de terceros.</li><li>Garantía de defectos separada de nuevas funcionalidades.</li><li>Evaluación de seguros profesionales y de ciberseguridad.</li><li>Escalamiento, negociación y solución de controversias.</li></ul>
+    </div>
+    <h2>Marco legal de referencia</h2>
+    <table><tbody>
+      <tr><td><b>Ley 19.628 / Ley 21.719</b></td><td>Protección de datos. La nueva regulación entra en vigor el 1 de diciembre de 2026 y distingue responsable y encargado.</td></tr>
+      <tr><td><b>Ley 20.584</b></td><td>La información clínica es sensible; regula custodia, acceso, confidencialidad e interoperabilidad.</td></tr>
+      <tr><td><b>Ley 21.663</b></td><td>Prevención, reporte y resolución de incidentes de ciberseguridad para instituciones alcanzadas.</td></tr>
+      <tr><td><b>Ley 17.336</b></td><td>Protege software y documentación; exige pactar por escrito la distribución de propiedad intelectual.</td></tr>
+      <tr><td><b>Código Civil, art. 1558</b></td><td>Permite acordar reglas de responsabilidad, con límites legales y sin garantizar inmunidad absoluta.</td></tr>
+    </tbody></table>
+    <div class="notice"><b>Antes de producción</b><br>No incorporar datos reales hasta aprobar contrato, anexo de tratamiento, controles de seguridad, responsables institucionales y procedimiento de incidentes.</div>
+    <footer><span>Validación de alcance · CICUC</span><span>7 / 8</span></footer>
+  </section>
+
+  <section class="page">
+    <header><div class="brand"><span class="mark"></span>CICUC</div><div class="meta">07 · Decisiones y validación</div></header>
     <h2>Decisiones solicitadas</h2>
     <table>
       <thead><tr><th>Tema</th><th>Propuesta</th><th>Validación</th></tr></thead>
@@ -148,6 +185,8 @@
         <tr><td>Elegibilidad</td><td>Siempre corresponde al investigador y al equipo clínico.</td><td class="check">☐ Aprobar ☐ Ajustar</td></tr>
         <tr><td>IA y voz</td><td>Fuera del MVP administrativo inicial.</td><td class="check">☐ Aprobar ☐ Ajustar</td></tr>
         <tr><td>Reportes</td><td>Implementar después de aprobar definiciones de KPI.</td><td class="check">☐ Aprobar ☐ Ajustar</td></tr>
+        <tr><td>Responsabilidad</td><td>CICUC responsable de datos; ADYAC encargado bajo instrucciones.</td><td class="check">☐ Aprobar ☐ Ajustar</td></tr>
+        <tr><td>Contrato de datos</td><td>Anexo de tratamiento y seguridad antes de producción.</td><td class="check">☐ Aprobar ☐ Ajustar</td></tr>
       </tbody>
     </table>
     <h3>Acuerdos y observaciones</h3><div class="lines"></div>
@@ -155,7 +194,7 @@
       <div class="signature"><b>Por CICUC</b><br>Nombre:<br>Cargo:<br>Firma y fecha:</div>
       <div class="signature"><b>Por el equipo del proyecto</b><br>Nombre:<br>Cargo:<br>Firma y fecha:</div>
     </div>
-    <footer><span>Validación de alcance · CICUC</span><span>6 / 6</span></footer>
+    <footer><span>Validación de alcance · CICUC</span><span>8 / 8</span></footer>
   </section>
 </body>
 </html>

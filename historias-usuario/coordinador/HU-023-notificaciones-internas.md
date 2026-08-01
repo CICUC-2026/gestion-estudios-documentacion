@@ -1,12 +1,12 @@
 # HU-023 — Recibir notificaciones internas
 
-**Tipo:** historia-usuario  
-**Actor:** coordinador  
-**Estado:** propuesta  
-**Bloqueada por:** HU-004, HU-021 y catálogo de eventos validado  
-**Última actualización:** 2026-07-17  
-**Feature relacionada:** [Tareas, comités y notificaciones](../../features/backlog/tareas-comites-notificaciones.md)  
-**Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/26  
+**Tipo:** historia-usuario
+**Actor:** coordinador
+**Estado:** propuesta
+**Bloqueada por:** HU-004, HU-021 y catálogo de eventos validado
+**Última actualización:** 2026-07-17
+**Feature relacionada:** [Tareas, comités y notificaciones](../../features/backlog/tareas-comites-notificaciones.md)
+**Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/26
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
 
 ## Historia

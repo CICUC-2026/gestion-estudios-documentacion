@@ -1,12 +1,12 @@
 # HU-021 — Gestionar tareas y seguimiento
 
-**Tipo:** historia-usuario  
-**Actor:** coordinador  
-**Estado:** propuesta  
-**Bloqueada por:** HU-004 y definición de visibilidad/recordatorios  
-**Última actualización:** 2026-07-17  
-**Feature relacionada:** [Tareas, comités y notificaciones](../../features/backlog/tareas-comites-notificaciones.md)  
-**Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/24  
+**Tipo:** historia-usuario
+**Actor:** coordinador
+**Estado:** propuesta
+**Bloqueada por:** HU-004 y definición de visibilidad/recordatorios
+**Última actualización:** 2026-07-17
+**Feature relacionada:** [Tareas, comités y notificaciones](../../features/backlog/tareas-comites-notificaciones.md)
+**Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/24
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
 
 ## Historia
