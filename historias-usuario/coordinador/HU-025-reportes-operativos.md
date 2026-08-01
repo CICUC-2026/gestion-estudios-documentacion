@@ -2,9 +2,9 @@
 
 **Tipo:** historia-usuario
 **Actor:** coordinador
-**Estado:** propuesta
+**Estado:** en desarrollo
 **Bloqueada por:** dominios fuente, HU-004 y catálogo de reportes validado
-**Última actualización:** 2026-07-17
+**Última actualización:** 2026-07-31
 **Feature relacionada:** [Reportes y auditoría](../../features/backlog/reportes-auditoria.md)
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/28
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
@@ -60,3 +60,12 @@ Agregados pueden reidentificar o inducir interpretaciones. Catálogo y supresió
 - [ ] Tests de definiciones, corte, alcance, supresión y no mutación.
 - [ ] Tests de rendimiento con volumen ficticio.
 - [ ] Playwright de filtros y estados diferenciados.
+
+## Incremento implementado 2026-07-31
+
+- preparación y listado persistente de cortes operativos;
+- fecha de corte, finalidad, autor y snapshot de estudios/tareas en PostgreSQL;
+- autorización backend y auditoría de preparación;
+- interfaz responsiva conectada a la API.
+
+Continúan pendientes el catálogo completo, filtros, supresión validada y rendimiento a volumen.

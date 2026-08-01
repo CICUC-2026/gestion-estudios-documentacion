@@ -2,9 +2,9 @@
 
 **Tipo:** historia-usuario
 **Actor:** coordinador
-**Estado:** propuesta
+**Estado:** en desarrollo
 **Bloqueada por:** HU-004 y definición de visibilidad/recordatorios
-**Última actualización:** 2026-07-17
+**Última actualización:** 2026-07-31
 **Feature relacionada:** [Tareas, comités y notificaciones](../../features/backlog/tareas-comites-notificaciones.md)
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/24
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
@@ -60,3 +60,13 @@ Una tarea puede contener contexto sensible o confundirse con una indicación cl�
 - [ ] Tests de permisos cruzados, transiciones, vencimiento y auditoría.
 - [ ] Tests que la tarea no amplía acceso ni ejecuta acciones.
 - [ ] Playwright de asignación, bloqueo y cierre.
+
+## Incremento implementado 2026-07-31
+
+- creación y listado persistente de tareas administrativas;
+- prioridad, estado inicial, vencimiento y responsable almacenados en PostgreSQL;
+- autorización backend para crear y sesión requerida para consultar;
+- auditoría de creación;
+- formulario web responsivo conectado a la API.
+
+Continúan pendientes las transiciones, reasignación y cierre completo de la HU.
