@@ -20,6 +20,12 @@ Registrar el mínimo de datos necesarios, separando información identificatoria
 - HU-012 — Registrar diagnóstico y biomarcadores estructurados.
 - HU-013 — Registrar antecedentes terapéuticos y datos clínicos fechados.
 
+## Prototipo de demostración permitido
+
+- HU-036 — Prototipo local con casos completamente ficticios, implementado sin API ni persistencia de servidor.
+
+HU-036 no desbloquea las HUs clínicas ni resuelve las decisiones pendientes.
+
 ## Contratos
 
 - identificadores, datos clínicos y operación se consultan mediante permisos separados;

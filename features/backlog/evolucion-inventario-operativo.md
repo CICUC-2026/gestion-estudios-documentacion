@@ -1,6 +1,6 @@
 # Feature — Evolución del inventario operativo
 
-**Estado:** propuesta
+**Estado:** completada
 **Tanda:** 2.1
 
 ## Objetivo

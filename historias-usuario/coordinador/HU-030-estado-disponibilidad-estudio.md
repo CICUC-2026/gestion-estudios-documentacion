@@ -2,7 +2,7 @@
 
 **Tipo:** historia-usuario
 **Actor:** coordinador
-**Estado:** propuesta
+**Estado:** implementada
 **Feature relacionada:** [Evolución del inventario operativo](../../features/backlog/evolucion-inventario-operativo.md)
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/34
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
