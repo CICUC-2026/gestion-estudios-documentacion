@@ -70,6 +70,7 @@ Afecta a la capa de diseño global (`CSS custom properties` / tokens de diseño)
 - Contrastes auditados contra blanco: texto principal 16.49:1, secundario 5.93:1,
   terciario 4.60:1 y verde estándar 8.00:1; ajuste final en `9d5900b`.
 - Frontend `77782cf`: contrato textual final, persistencia tras recarga y foco visible por teclado.
-- Frontend `f256689` y `143c378`: barra móvil desplazable, separada del contenido, con objetivos
-  táctiles de 44 px verificados bajo las mismas condiciones de CI.
+- Frontend `4281d64` y `a77619e`: barra móvil desplazable en portal, espacio reservado, objetivos
+  táctiles de 44 px y navegación por teclado verificados bajo las mismas condiciones de CI.
+- CI final frontend: validación `30951353506` y despliegue AWS `30951353392`, ambos exitosos.
 - Verificación: ESLint, TypeScript, 6 Vitest, build y 14 escenarios Playwright en escritorio/móvil.
