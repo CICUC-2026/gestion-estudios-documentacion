@@ -2,7 +2,7 @@
 
 **Tipo:** historia-usuario  
 **Actor:** admin  
-**Estado:** lista  
+**Estado:** implementada  
 **Última actualización:** 2026-08-04  
 **Feature relacionada:** [Fundamentos de la plataforma](../../features/en-desarrollo/fundamentos-plataforma.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/43  
@@ -14,11 +14,11 @@ Como **administrador**, quiero administrar todos los recursos sintéticos de la 
 
 ## Criterios verificables
 
-- [ ] El administrador puede ejecutar todas las capacidades de pacientes, estudios, tareas, preselección, cupos, exportación y auditoría sintética.
-- [ ] Los permisos continúan separados y los usuarios no administradores conservan restricciones por rol.
-- [ ] Cada mutación sensible registra autor, fecha, acción, entidad y resultado.
-- [ ] Solo se aceptan códigos `PX-DEMO-*`; no existe ingreso de identidad real.
-- [ ] Los registros se archivan lógicamente y pueden reiniciarse de forma controlada.
+- [x] El administrador omite restricciones por rol en todas las capacidades disponibles y futuras protegidas por `requerir_roles`.
+- [x] Los permisos continúan separados y los usuarios no administradores conservan restricciones por rol.
+- [x] Cada mutación sensible disponible registra autor, fecha, acción, entidad y resultado.
+- [x] Solo se aceptan códigos `PX-DEMO-*`; no existe ingreso de identidad real.
+- [x] Los registros se archivan lógicamente y los seeds se restauran de forma idempotente y controlada.
 
 ## Impacto, contratos y riesgos
 
@@ -34,3 +34,9 @@ Afecta autorización, auditoría, seeds y operación. El bypass administrativo y
 - Backend `app/dominios/autenticacion/`, dependencias de autorización y tests negativos.
 - Frontend sesión, navegación y rotulado de demo.
 - Tests de administrador, roles restringidos, auditoría y rechazo de códigos no sintéticos.
+
+## Evidencia
+
+- Backend: bypass administrativo genérico en `requerir_roles`, archivo lógico, auditoría y carga idempotente desplegados hasta `fe8177d00e8f52776bbc33b709199cad013faea6`.
+- Frontend: rotulado persistente de datos de demostración desplegado hasta `955992cf98b1fec1cf920aa5cb43c45e2dccfcb9`.
+- Verificación 2026-08-04: 4 pruebas backend de roles/pacientes y 3 pruebas frontend de layout aprobadas; TypeScript aprobado.
