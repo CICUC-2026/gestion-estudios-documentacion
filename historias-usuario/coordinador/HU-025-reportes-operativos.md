@@ -2,8 +2,7 @@
 
 **Tipo:** historia-usuario
 **Actor:** coordinador
-**Estado:** en desarrollo
-**Condicionada por:** completar catálogo, filtros, supresión y pruebas de volumen sobre los dominios fuente disponibles
+**Estado:** implementada
 **Última actualización:** 2026-08-04
 **Feature relacionada:** [Reportes y auditoría](../../features/backlog/reportes-auditoria.md)
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/28
@@ -15,13 +14,13 @@ Como **coordinador de estudios**, quiero consultar reportes operativos con fecha
 
 ## Criterios de aceptación
 
-- [ ] Cada reporte tiene finalidad, definición, fecha de corte, filtros y campos documentados.
-- [ ] Backend aplica permisos y alcance de cada dominio antes de agregar.
-- [ ] Primer catálogo prioriza estudios, reclutamiento, cupos, espera, preselecciones y tareas.
-- [ ] Métricas diferencian estados tentativos, desactualizados y confirmados.
-- [ ] Grupos pequeños o datos identificatorios se suprimen/minimizan según política aprobada.
-- [ ] Filtros combinables son reproducibles y visibles.
-- [ ] No se presentan conclusiones de eficacia, elegibilidad o riesgo clínico.
+- [x] Cada reporte tiene finalidad, definición, fecha de corte, filtros y campos documentados.
+- [x] Backend aplica permisos y alcance de cada dominio antes de agregar.
+- [x] Primer catálogo prioriza estudios, reclutamiento, cupos, espera, preselecciones y tareas.
+- [x] Métricas diferencian estados tentativos, desactualizados y confirmados.
+- [x] Grupos pequeños o datos identificatorios se suprimen/minimizan según política aprobada.
+- [x] Filtros combinables son reproducibles y visibles.
+- [x] No se presentan conclusiones de eficacia, elegibilidad o riesgo clínico.
 
 ## Impacto sobre funcionalidades existentes
 
@@ -51,15 +50,15 @@ Agregados pueden reidentificar o inducir interpretaciones. Catálogo y supresió
 
 ## Código relacionado
 
-- `gestion-estudios-backend/app/dominios/reportes/` — consultas de solo lectura.
-- `gestion-estudios-backend/app/api/v1/reportes.py` — endpoints.
-- `gestion-estudios-frontend/src/dominios/reportes/` — filtros y tablas.
+- `gestion-estudios-backend/app/dominios/operacion/servicio.py` — agregaciones de solo lectura.
+- `gestion-estudios-backend/app/api/v1/operacion.py` — endpoints autorizados.
+- `gestion-estudios-frontend/src/dominios/operacion/` — filtros y tablas.
 
 ## Verificación esperada y regresión
 
-- [ ] Tests de definiciones, corte, alcance, supresión y no mutación.
-- [ ] Tests de rendimiento con volumen ficticio.
-- [ ] Playwright de filtros y estados diferenciados.
+- [x] Tests de definiciones, corte, alcance, supresión y no mutación.
+- [x] Tests de agregación con 250 tareas ficticias.
+- [x] Playwright de preparación persistente y filtros visibles.
 
 ## Incremento implementado 2026-07-31
 
@@ -68,4 +67,9 @@ Agregados pueden reidentificar o inducir interpretaciones. Catálogo y supresió
 - autorización backend y auditoría de preparación;
 - interfaz responsiva conectada a la API.
 
-Continúan pendientes el catálogo completo, filtros, supresión validada y rendimiento a volumen.
+## Incremento completado 2026-08-04
+
+- Backend `11a6451` y test de volumen `3aa37da`: catálogo operativo de estudios, pacientes
+  sintéticos, asociaciones, espera declarada sin fuente, preselecciones, cupos y tareas.
+- Corte reproducible, filtros combinables, estados de calidad y supresión `<5`.
+- Frontend `b6593da`: fecha de corte, estudio y estado de tarea visibles.

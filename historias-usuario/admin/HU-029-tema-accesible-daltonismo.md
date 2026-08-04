@@ -2,7 +2,7 @@
 
 **Tipo:** historia-usuario  
 **Actor:** admin  
-**Estado:** lista  
+**Estado:** implementada
 **Última actualización:** 2026-08-04  
 **Feature relacionada:** [Fundamentos de la plataforma](../../features/en-desarrollo/fundamentos-plataforma.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/38
@@ -20,13 +20,13 @@ La interfaz actual utiliza tonos cromáticos estándar que requieren refinamient
 
 ## Criterios de aceptación
 
-- [ ] Se ajusta la paleta de tokens CSS principales a un tono verde opaco (verde sobrio/desaturado de baja fatiga visual) que cumpla con un ratio de contraste mínimo de 4.5:1 (WCAG 2.1 AA) para texto normal.
-- [ ] Se añade un control selector de tema accesible en la barra de navegación superior horizontal.
-- [ ] El selector ofrece modos visuales predefinidos: **Estándar CICUC (Verde Opaco)**, **Alto Contraste** y **Adaptado para Daltonismo** (optimizando la diferenciación de estados sin depender exclusivamente de matices rojo/verde).
-- [ ] Los estados operativos, alertas, badges y botones no dependen únicamente de la diferencia de color; incluyen iconos, formas geométricamente diferenciables o etiquetas textuales visibles.
-- [ ] La preferencia del tema seleccionado se persiste localmente en la sesión/navegador (`localStorage`) de manera automática sin alterar la sesión del usuario.
-- [ ] La navegación mediante teclado (indicadores de foco visible `:focus-visible`) mantiene un contraste claro y distinguible en todos los temas.
-- [ ] Se ejecutan pruebas automatizadas de componentes (Vitest) y de interfaz end-to-end (Playwright) verificando el cambio de clases/atributos de tema en el DOM.
+- [x] Se ajusta la paleta de tokens CSS principales a un tono verde opaco (verde sobrio/desaturado de baja fatiga visual) que cumpla con un ratio de contraste mínimo de 4.5:1 (WCAG 2.1 AA) para texto normal.
+- [x] Se añade un control selector de tema accesible en la barra de navegación superior horizontal.
+- [x] El selector ofrece modos visuales predefinidos: **Estándar CICUC (Verde Opaco)**, **Alto Contraste** y **Adaptado para Daltonismo** (optimizando la diferenciación de estados sin depender exclusivamente de matices rojo/verde).
+- [x] Los estados operativos, alertas, badges y botones no dependen únicamente de la diferencia de color; incluyen iconos, formas geométricamente diferenciables o etiquetas textuales visibles.
+- [x] La preferencia del tema seleccionado se persiste localmente en la sesión/navegador (`localStorage`) de manera automática sin alterar la sesión del usuario.
+- [x] La navegación mediante teclado (indicadores de foco visible `:focus-visible`) mantiene un contraste claro y distinguible en todos los temas.
+- [x] Se ejecutan pruebas automatizadas de componentes (Vitest) y de interfaz end-to-end (Playwright) verificando el cambio de clases/atributos de tema en el DOM.
 
 ## Impacto sobre funcionalidades existentes
 
@@ -58,7 +58,16 @@ Afecta a la capa de diseño global (`CSS custom properties` / tokens de diseño)
 
 ## Verificación esperada y regresión
 
-- [ ] Auditar contrastes de color con directrices WCAG 2.1 AA (mínimo 4.5:1 en texto y 3:1 en elementos gráficos).
-- [ ] Pruebas unitarias de renderizado y alternancia de temas mediante Vitest.
-- [ ] Prueba E2E en Playwright validando la alternancia y persistencia del tema en `localStorage`.
-- [ ] Verificación de navegación completa utilizando únicamente teclado.
+- [x] Auditar contrastes de color con directrices WCAG 2.1 AA (mínimo 4.5:1 en texto y 3:1 en elementos gráficos).
+- [x] Pruebas unitarias de renderizado y alternancia de temas mediante Vitest.
+- [x] Prueba E2E en Playwright validando la alternancia y persistencia del tema en `localStorage`.
+- [x] Verificación de navegación completa utilizando únicamente teclado.
+
+## Evidencia de implementación
+
+- Tokens y tres temas en `src/aplicacion/estilos.css`; selector y persistencia en
+  `ContextoTema.tsx` y `LayoutPrincipal.tsx`.
+- Contrastes auditados contra blanco: texto principal 16.49:1, secundario 5.93:1,
+  terciario 4.60:1 y verde estándar 8.00:1; ajuste final en `9d5900b`.
+- Frontend `77782cf`: contrato textual final, persistencia tras recarga y foco visible por teclado.
+- Verificación: ESLint, TypeScript, 6 Vitest, build y 14 escenarios Playwright en escritorio/móvil.
