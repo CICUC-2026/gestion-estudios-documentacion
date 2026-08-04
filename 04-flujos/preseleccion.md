@@ -3,6 +3,10 @@
 **Estado:** propuesta pendiente de validación clínica y operacional  
 **Última actualización:** 2026-07-17
 
+## Decisión acotada para demo sintética
+
+ADR-008 permite implementar este flujo únicamente con pacientes `PX-DEMO-*` y revisión humana. El administrador puede ejecutar todas las transiciones; provisionalmente el médico crea/evalúa y el investigador confirma, deriva, cierra o reabre. Ningún estado se presenta como elegibilidad.
+
 ## Principio
 
 La preselección documenta una revisión humana inicial. No reemplaza screening formal, evaluación clínica ni decisión de elegibilidad.

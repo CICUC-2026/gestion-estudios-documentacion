@@ -37,3 +37,7 @@ Las consultas y vistas devolverán solo las categorías necesarias para la acci�
 - requisitos de anonimización para reportes.
 
 Estas definiciones requieren validación clínica, legal y de seguridad antes de producción.
+
+## Excepción aceptada para demo sintética
+
+ADR-008 permite conservar indefinidamente registros ficticios `PX-DEMO-*`, con archivo lógico y reinicio controlado. Solo el administrador puede exportarlos y toda exportación queda auditada. Esta excepción termina inmediatamente si un registro permite identificar directa o indirectamente a una persona real.

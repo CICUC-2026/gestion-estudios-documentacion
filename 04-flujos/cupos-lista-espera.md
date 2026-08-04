@@ -3,6 +3,10 @@
 **Estado:** propuesta pendiente de validación operacional  
 **Última actualización:** 2026-07-17
 
+## Decisión acotada para demo sintética
+
+ADR-008 adopta `confirmado`, `reservado`, `ocupado` y `pendiente_reconfirmacion` como estados administrativos separados. Confirmación y reserva duran 30 días por defecto, configurables entre 15 y 90; existe aviso siete días antes y nunca hay liberación o reasignación automática.
+
 ## Cupo
 
 ```text

@@ -22,6 +22,9 @@ Entregar visibilidad operativa y trazabilidad sobre accesos, modificaciones, tra
 - HU-026 — Exportar información autorizada.
 - HU-027 — Endurecer seguridad, accesibilidad y calidad.
 - HU-028 — Verificar respaldo y recuperación.
+- HU-043 — Exportar información sintética autorizada: lista.
+
+ADR-008 aprueba formatos y autorización administrativa solo para la demo sintética; HU-026 permanece bloqueada para información real.
 
 ## Contratos
 

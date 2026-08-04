@@ -1,7 +1,7 @@
 # Feature — Fundamentos de la plataforma
 
 **Estado:** en-desarrollo  
-**Última actualización:** 2026-07-17
+**Última actualización:** 2026-08-04
 
 ## Objetivo
 
@@ -18,8 +18,8 @@ Entregar una base ejecutable y segura sobre la cual desarrollar los dominios cl�
 
 ## No incluye
 
-- estudios, pacientes o preselecciones funcionales;
-- despliegue productivo;
+- datos de personas reales o preselecciones clínicas;
+- alta disponibilidad productiva;
 - identidad de marca definitiva;
 - integraciones externas.
 
@@ -30,4 +30,4 @@ Entregar una base ejecutable y segura sobre la cual desarrollar los dominios cl�
 - HU-003 — Administrar autenticación y sesiones. Implementada y verificada.
 - HU-004 — Administrar roles y permisos.
 - HU-029 — Paleta de color opaca y tema accesible para daltonismo.
-
+- HU-040 — Gobernar la demo sintética con acceso administrador.

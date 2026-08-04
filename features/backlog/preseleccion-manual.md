@@ -1,6 +1,6 @@
 # Feature — Preselección manual
 
-**Estado:** backlog  
+**Estado:** demo sintética lista; alcance real bloqueado  
 **Tanda:** 4
 
 ## Objetivo
@@ -15,7 +15,7 @@ Relacionar un paciente con un estudio y registrar la revisión manual de criteri
 - HU-010/HU-011: paciente mínimo y consulta autorizada.
 - validación clínica de estados y transiciones descritos en `04-flujos/preseleccion.md`.
 
-La asociación sintética de HU-038 sirve solo para demostración administrativa y no constituye HU-014 ni una preselección clínica.
+La asociación sintética de HU-038 sirve solo para demostración administrativa y no constituye HU-014 ni una preselección clínica. ADR-008 permite desarrollar HU-041 como flujo sintético independiente.
 
 ## HUs propuestas
 
@@ -24,6 +24,7 @@ La asociación sintética de HU-038 sirve solo para demostración administrativa
 - HU-016 — Evaluar manualmente criterios.
 - HU-017 — Gestionar estados, cierre y reapertura.
 - HU-018 — Elaborar y confirmar un resumen manual.
+- HU-041 — Gestionar preselección manual sintética: lista.
 
 ## Contratos
 
