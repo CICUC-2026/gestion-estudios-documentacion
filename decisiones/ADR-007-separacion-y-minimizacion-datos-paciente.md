@@ -1,7 +1,8 @@
 # ADR-007 — Separación y minimización de datos de pacientes
 
-**Estado:** propuesta — requiere validación clínica, legal y de seguridad  
+**Estado:** aceptada parcialmente para demo sintética; propuesta para datos reales
 **Fecha:** 2026-07-17
+**Actualización:** 2026-08-04
 
 ## Contexto
 
@@ -33,6 +34,15 @@ Además:
 - reglas de corrección, anonimización, exportación y disposición;
 - cifrado adicional o separación física requerida por infraestructura.
 
-## Consecuencia mientras esté propuesta
+## Decisión acotada para la demo
 
-Se permite documentar y prototipar con datos ficticios, pero no implementar persistencia de pacientes ni desplegar el módulo.
+Se permite implementar y desplegar persistencia cuando se cumplan simultáneamente estas condiciones:
+
+- el entorno se identifica como demo y contiene exclusivamente personas ficticias;
+- el código de cada caso comienza con `PX-DEMO-`;
+- no se almacenan nombre, RUT, contacto, identificador institucional ni fecha de nacimiento;
+- la interfaz y API declaran que el registro es sintético y no clínico;
+- no existe elegibilidad, recomendación, matching ni inferencia automática;
+- los datos pueden reiniciarse como parte de la operación de demostración.
+
+La aceptación parcial no resuelve Issues #5/#6 ni autoriza datos reales. Para operación clínica siguen pendientes todas las decisiones requeridas anteriormente.
