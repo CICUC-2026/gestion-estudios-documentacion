@@ -3,11 +3,13 @@
 **Tipo:** historia-usuario  
 **Actor:** medico  
 **Estado:** propuesta  
-**Bloqueada por:** HU-004, ADR-007, HU-005 y HU-010/HU-011  
-**Última actualización:** 2026-07-17  
+**Bloqueada por:** Issues #5/#6, aceptación completa de ADR-007 y HU-010/HU-011  
+**Última actualización:** 2026-08-04  
 **Feature relacionada:** [Preselección manual](../../features/backlog/preseleccion-manual.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/17  
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
+
+**Aclaración de alcance:** HU-038 permite una asociación manual exclusivamente sintética y administrativa. Esta HU corresponde a la asociación autorizada de un paciente real y no representa compatibilidad, elegibilidad ni recomendación.
 
 ## Historia
 

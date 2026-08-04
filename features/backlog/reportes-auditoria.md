@@ -9,16 +9,16 @@ Entregar visibilidad operativa y trazabilidad sobre accesos, modificaciones, tra
 
 ## Dependencias
 
-- HU-004 y matriz de alcance aprobada;
+- HU-004 implementada; Issue #5 mantiene pendiente la validación institucional de la matriz clínica;
 - dominios fuente implementados y auditados;
-- ADR-007 y política de minimización/retención aceptadas;
+- ADR-007 aceptada solo para demo sintética; minimización/retención de datos reales pendientes por Issue #6;
 - finalidad y formatos de exportación aprobados;
 - objetivos de recuperación y continuidad definidos.
 
 ## HUs
 
 - HU-024 — Consultar auditoría autorizada.
-- HU-025 — Consultar reportes operativos.
+- HU-025 — Consultar reportes operativos: en desarrollo con incremento básico persistente.
 - HU-026 — Exportar información autorizada.
 - HU-027 — Endurecer seguridad, accesibilidad y calidad.
 - HU-028 — Verificar respaldo y recuperación.

@@ -3,8 +3,8 @@
 **Tipo:** historia-usuario  
 **Actor:** admin  
 **Estado:** propuesta  
-**Bloqueada por:** infraestructura elegida, RPO/RTO y política de retención  
-**Última actualización:** 2026-07-17  
+**Bloqueada por:** RPO/RTO, política de retención y arquitectura de respaldo aprobados para EC2/PostgreSQL  
+**Última actualización:** 2026-08-04  
 **Feature relacionada:** [Reportes y auditoría](../../features/backlog/reportes-auditoria.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/31  
 **Project:** https://github.com/orgs/CICUC-2026/projects/1

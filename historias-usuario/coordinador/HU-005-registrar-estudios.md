@@ -4,7 +4,7 @@
 **Actor:** coordinador
 **Estado:** implementada
 **Última actualización:** 2026-07-31
-**Feature relacionada:** [Estudios, protocolos y criterios](../../features/backlog/estudios-protocolos.md)
+**Feature relacionada:** [Estudios, protocolos y criterios](../../features/completadas/estudios-protocolos.md)
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/8
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
 

@@ -3,11 +3,13 @@
 **Tipo:** historia-usuario  
 **Actor:** medico  
 **Estado:** propuesta  
-**Bloqueada por:** Issues #5 y #6; ADR-007 pendiente de aceptación  
-**Última actualización:** 2026-07-17  
+**Bloqueada por:** Issues #5 y #6; aceptación completa de ADR-007 para datos reales  
+**Última actualización:** 2026-08-04  
 **Feature relacionada:** [Pacientes y datos estructurados](../../features/backlog/pacientes-datos-estructurados.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/14  
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
+
+**Aclaración de alcance:** esta HU define consulta autorizada de pacientes reales e identidad minimizada. La consulta de casos sintéticos de demo ya está cubierta por HU-038.
 
 ## Historia
 

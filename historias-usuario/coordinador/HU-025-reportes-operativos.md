@@ -3,8 +3,8 @@
 **Tipo:** historia-usuario
 **Actor:** coordinador
 **Estado:** en desarrollo
-**Bloqueada por:** dominios fuente, HU-004 y catálogo de reportes validado
-**Última actualización:** 2026-07-31
+**Condicionada por:** completar catálogo, filtros, supresión y pruebas de volumen sobre los dominios fuente disponibles
+**Última actualización:** 2026-08-04
 **Feature relacionada:** [Reportes y auditoría](../../features/backlog/reportes-auditoria.md)
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/28
 **Project:** https://github.com/orgs/CICUC-2026/projects/1

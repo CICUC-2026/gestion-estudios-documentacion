@@ -3,8 +3,8 @@
 **Tipo:** historia-usuario  
 **Actor:** medico  
 **Estado:** propuesta  
-**Bloqueada por:** HU-004, HU-007, HU-015 y validación clínica  
-**Última actualización:** 2026-07-17  
+**Bloqueada por:** HU-015 y validación clínica del método de revisión y evidencia  
+**Última actualización:** 2026-08-04  
 **Feature relacionada:** [Preselección manual](../../features/backlog/preseleccion-manual.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/19  
 **Project:** https://github.com/orgs/CICUC-2026/projects/1

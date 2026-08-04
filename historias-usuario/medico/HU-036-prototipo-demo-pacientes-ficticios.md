@@ -8,6 +8,8 @@
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/39  
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
 
+**Evolución posterior:** este incremento local fue reemplazado como fuente de verdad por HU-038, que persiste exclusivamente pacientes sintéticos `PX-DEMO-*` en PostgreSQL bajo la aceptación parcial de ADR-007. Los criterios siguientes documentan el alcance histórico verificado de HU-036.
+
 ## Historia
 
 Como **médico investigador en una demostración**, quiero crear y revisar casos completamente ficticios para mostrar el flujo previsto sin persistir pacientes en el servidor ni presentar el prototipo como una función clínica aprobada.

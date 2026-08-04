@@ -19,7 +19,7 @@ Mantener fichas de estudios, responsables, versiones de protocolo y criterios in
 ## Dependencias
 
 - HU-003 autenticación y sesiones: implementada;
-- HU-004 roles, permisos y alcances: pendiente de validación;
+- HU-004 roles y permisos técnicos: implementada; validación institucional de alcances clínicos pendiente en Issue #5;
 - decisión sobre almacenamiento de documentos confidenciales: pendiente.
 
 ## HUs propuestas

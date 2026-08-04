@@ -3,8 +3,8 @@
 **Tipo:** historia-usuario  
 **Actor:** auditor  
 **Estado:** propuesta  
-**Bloqueada por:** HU-004, catálogo de eventos y política de retención  
-**Última actualización:** 2026-07-17  
+**Bloqueada por:** Issue #5, catálogo de eventos consultables y política de retención  
+**Última actualización:** 2026-08-04  
 **Feature relacionada:** [Reportes y auditoría](../../features/backlog/reportes-auditoria.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/27  
 **Project:** https://github.com/orgs/CICUC-2026/projects/1

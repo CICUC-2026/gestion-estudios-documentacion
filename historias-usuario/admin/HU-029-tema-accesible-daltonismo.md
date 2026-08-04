@@ -2,11 +2,13 @@
 
 **Tipo:** historia-usuario  
 **Actor:** admin  
-**Estado:** propuesta  
-**Última actualización:** 2026-07-25  
+**Estado:** lista  
+**Última actualización:** 2026-08-04  
 **Feature relacionada:** [Fundamentos de la plataforma](../../features/en-desarrollo/fundamentos-plataforma.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/38
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
+
+**Preparación:** no tiene bloqueo funcional. La paleta es provisional hasta resolver Issue #7 y debe implementarse con tokens reemplazables, contraste medido y doble codificación de estados.
 
 ## Historia
 

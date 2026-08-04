@@ -1,6 +1,6 @@
 # Feature — Pacientes y datos estructurados
 
-**Estado:** backlog  
+**Estado:** implementación parcial; alcance real bloqueado  
 **Tanda:** 3
 
 ## Objetivo
@@ -11,7 +11,7 @@ Registrar el mínimo de datos necesarios, separando información identificatoria
 
 - Issue #5: validar roles y alcances.
 - Issue #6: validar fundamento, minimización, retención y disposición.
-- ADR-007: permanece `propuesta` hasta completar la validación clínica, legal y de seguridad.
+- ADR-007: aceptada solo para demo sintética; el alcance con datos reales continúa propuesto.
 
 ## HUs propuestas
 
@@ -20,11 +20,12 @@ Registrar el mínimo de datos necesarios, separando información identificatoria
 - HU-012 — Registrar diagnóstico y biomarcadores estructurados.
 - HU-013 — Registrar antecedentes terapéuticos y datos clínicos fechados.
 
-## Prototipo de demostración permitido
+## Incremento de demostración implementado
 
-- HU-036 — Prototipo local con casos completamente ficticios, implementado sin API ni persistencia de servidor.
+- HU-036 — prototipo local histórico con casos ficticios, reemplazado como fuente de verdad.
+- HU-038 — pacientes sintéticos `PX-DEMO-*`, diagnósticos/biomarcadores ficticios y asociaciones administrativas persistentes en PostgreSQL.
 
-HU-036 no desbloquea las HUs clínicas ni resuelve las decisiones pendientes.
+HU-038 no desbloquea las HUs clínicas ni resuelve Issues #5/#6. HU-010 a HU-013 corresponden exclusivamente al futuro tratamiento autorizado de pacientes y datos clínicos reales.
 
 ## Contratos
 

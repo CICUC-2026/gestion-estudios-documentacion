@@ -3,8 +3,8 @@
 **Tipo:** historia-usuario  
 **Actor:** auditor  
 **Estado:** propuesta  
-**Bloqueada por:** ADR-007, Issue #6, HU-025 y política de exportación  
-**Última actualización:** 2026-07-17  
+**Bloqueada por:** Issue #6, aceptación completa de ADR-007, finalización de HU-025 y política de exportación  
+**Última actualización:** 2026-08-04  
 **Feature relacionada:** [Reportes y auditoría](../../features/backlog/reportes-auditoria.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/29  
 **Project:** https://github.com/orgs/CICUC-2026/projects/1

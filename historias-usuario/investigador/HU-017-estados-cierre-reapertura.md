@@ -3,8 +3,8 @@
 **Tipo:** historia-usuario  
 **Actor:** investigador  
 **Estado:** propuesta  
-**Bloqueada por:** HU-004, HU-015 y validación de `04-flujos/preseleccion.md`  
-**Última actualización:** 2026-07-17  
+**Bloqueada por:** HU-015 y validación de estados/transiciones en `04-flujos/preseleccion.md`  
+**Última actualización:** 2026-08-04  
 **Feature relacionada:** [Preselección manual](../../features/backlog/preseleccion-manual.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/20  
 **Project:** https://github.com/orgs/CICUC-2026/projects/1

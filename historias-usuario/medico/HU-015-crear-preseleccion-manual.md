@@ -3,8 +3,8 @@
 **Tipo:** historia-usuario  
 **Actor:** medico  
 **Estado:** propuesta  
-**Bloqueada por:** HU-004, HU-006/HU-008, HU-014 y validación del flujo  
-**Última actualización:** 2026-07-17  
+**Bloqueada por:** HU-014 y validación clínica/operacional de `04-flujos/preseleccion.md`  
+**Última actualización:** 2026-08-04  
 **Feature relacionada:** [Preselección manual](../../features/backlog/preseleccion-manual.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/18  
 **Project:** https://github.com/orgs/CICUC-2026/projects/1

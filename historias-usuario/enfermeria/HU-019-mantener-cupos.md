@@ -3,8 +3,8 @@
 **Tipo:** historia-usuario  
 **Actor:** enfermeria  
 **Estado:** propuesta  
-**Bloqueada por:** HU-004, HU-005 y validación de `04-flujos/cupos-lista-espera.md`  
-**Última actualización:** 2026-07-17  
+**Bloqueada por:** validación institucional de fuente, vigencia y transiciones en `04-flujos/cupos-lista-espera.md`  
+**Última actualización:** 2026-08-04  
 **Feature relacionada:** [Cupos y lista de espera](../../features/backlog/cupos-lista-espera.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/22  
 **Project:** https://github.com/orgs/CICUC-2026/projects/1

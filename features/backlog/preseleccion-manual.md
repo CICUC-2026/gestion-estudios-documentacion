@@ -9,11 +9,13 @@ Relacionar un paciente con un estudio y registrar la revisión manual de criteri
 
 ## Dependencias bloqueantes
 
-- HU-004 y Issue #5: roles, capacidades y alcances.
+- HU-004 está implementada; Issue #5 mantiene pendiente la validación institucional de roles y alcances clínicos.
 - ADR-007 e Issue #6: tratamiento de datos de pacientes.
-- HU-005 a HU-008: estudio, versiones, criterios y versión vigente.
+- HU-005 a HU-008: implementadas y verificadas.
 - HU-010/HU-011: paciente mínimo y consulta autorizada.
 - validación clínica de estados y transiciones descritos en `04-flujos/preseleccion.md`.
+
+La asociación sintética de HU-038 sirve solo para demostración administrativa y no constituye HU-014 ni una preselección clínica.
 
 ## HUs propuestas
 

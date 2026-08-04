@@ -9,8 +9,7 @@ Administrar cupos por estudio y brazo, su fuente, confirmación, vigencia e hist
 
 ## Dependencias
 
-- HU-004 permisos y alcances;
-- HU-005 estudios;
+- HU-004 permisos y HU-005 estudios: implementadas;
 - HU-014 asociación paciente-estudio;
 - HU-017 estados validados;
 - reglas operativas de fuente, vigencia, reserva y prioridad aprobadas por CICUC.

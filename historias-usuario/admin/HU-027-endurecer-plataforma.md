@@ -3,8 +3,8 @@
 **Tipo:** historia-usuario  
 **Actor:** admin  
 **Estado:** propuesta  
-**Bloqueada por:** flujos críticos implementados y entorno de preproducción  
-**Última actualización:** 2026-07-17  
+**Bloqueada por:** definición de versión candidata, flujos críticos objetivo y entorno de preproducción separado de la demo  
+**Última actualización:** 2026-08-04  
 **Feature relacionada:** [Reportes y auditoría](../../features/backlog/reportes-auditoria.md)  
 **Issue GitHub:** https://github.com/CICUC-2026/gestion-estudios-documentacion/issues/30  
 **Project:** https://github.com/orgs/CICUC-2026/projects/1
